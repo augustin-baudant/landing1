@@ -1,0 +1,70 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0 0 0);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+
+.page-content {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-content {
+    padding: 20px 40px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner h2 {
+    font-size: 18px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+#text {
+  color: black;
+  padding-bottom: 40px;
+}
